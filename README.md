@@ -16,8 +16,8 @@ The configuration about Sublime
 <pre><code># vim -d /usr/lib/sublime-text-2/sublime_text
 </code></pre>
 - Change strings:
-    - input:          :%!xdd
-    - Search:         /3342 3032
+    - input:          `:%!xdd`
+    - Search:         `/3342 3032`
     - Change to:      3242 3042
 <pre><code>:%s/3342 3032/3242 3042/
 </code></pre>
@@ -26,8 +26,7 @@ The configuration about Sublime
 :x
 </code></pre>
 - Open **Sublime** -> **Help** -> **Enter License**, and paste following contents [ALL of them]:
-<pre><code>
-—–BEGIN LICENSE—–
+<pre><code>—–BEGIN LICENSE—–
 hiwanz
 Unlimited User License
 EA7E-26838
@@ -50,8 +49,7 @@ EA7E-26838
 - Installation:
     - Press `Ctrl + ``
     - Input the following and press `Enter`:
-<pre><code>
-import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
+<pre><code>import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
 </code></pre>
 
 - Lists (Press `Ctrl + Shift + p` to open **Anything Panel**):
