@@ -6,7 +6,7 @@ The configuration about Sublime
 # Installation (Ubuntu)
 - Download: http://www.sublimetext.com/
 - Install:
-<pre><code> # add-apt-repository ppa:webupd8team/sublime-text-2
+<pre><code># add-apt-repository ppa:webupd8team/sublime-text-2
 # apt-get update;
 # apt-get sublime-text-dev
 </code></pre>
@@ -46,4 +46,23 @@ EA7E-26838
 # Configuration:
 - Copy the `Packages/*` to `$HOME/.config/sublime-text-2/Packages`
 
+# Pakcages:
+- Installation:
+    - Press `Ctrl + ``
+    - Input the following and press `Enter`:
+<pre><code>
+import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
+</code></pre>
+
+- Lists (Press `Ctrl + Shift + p` to open **Anything Panel**):
+    - ConvertToUTF8
+    - GBK Encoding Support
+    - GotoLastEdit
+    - OpenSearchResult
+    - SublimeCodeIntel
+    - Vintage
+    - Vintage Ex
+    - natigationHistory
+
 # Screenshot:
+![My_Sublime2](https://github.com/woainvzu/Sublime2_Config_Marslo/blob/master/Screenshot/Sublime2_Marslo.png?raw=true)

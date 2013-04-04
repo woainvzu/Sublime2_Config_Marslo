@@ -1,7 +1,0 @@
-[
-    {
-        "keys": ["super+'"],
-        "command": "goto_last_edit",
-        "context": [{"key": "setting.command_mode"}]
-    }
-]
