@@ -3,15 +3,16 @@ Sublime2_Config_Marslo
 
 The configuration about Sublime
 
-# Installation (Ubuntu)
+# Ubuntu
+## Installation 
 - Download: http://www.sublimetext.com/
 - Install:
 <pre><code># add-apt-repository ppa:webupd8team/sublime-text-2
-# apt-get update;
-# apt-get sublime-text-dev
+$ sudo apt-get update;
+$ sudo apt-get sublime-text-dev
 </code></pre>
 
-# Crack:
+## Crack (Sublime2):
 - Open the execution file by binary:
 <pre><code># vim -d /usr/lib/sublime-text-2/sublime_text
 </code></pre>
@@ -42,10 +43,10 @@ EA7E-26838
 </code></pre>
 
 
-# Configuration:
+## Configuration:
 - Copy the `Packages/*` to `$HOME/.config/sublime-text-2/Packages`
 
-# Pakcages:
+## Pakcages:
 - Installation:
     - Press `Ctrl + ``
     - Input the following and press `Enter`:
@@ -62,5 +63,35 @@ EA7E-26838
     - Vintage Ex
     - natigationHistory
 
+# Windows (Win7)
+## Installation
+- Download(Sublime3Beta): http://www.sublimetext.com/3
+- Package Control Installation (Reference: http://wbond.net/sublime_packages/package_control/installation#ST3):
+    - Download git
+    - Clone https://github.com/wbond/sublime_package_control.git as "Package Control" in foler `%appdata%\Sublime Text 3\Packages`
+    <pre><code>$ cd /c/user/<LOGINNAME>/AppData/Roaming/Sublime\ Text\ 3/Packages
+    $ git clone https://github.com/wbond/sublime_package_control.git "Package Control"
+    $ cd "Package Control"
+    $ git checkout python3
+    </code></pre>
+
+## Use specified configurations and themes:
+- Copy all files in foler **Win7(Sublime3Beta)** to local path `%appdata%\Sublime Text 3\Packages`
+- Restart Sublime 3
+
+## Plugins installed:
+- Package Control
+- ConvertToUTF8
+- OpenSearchResult
+- VintageEX
+- Vintageous
+- Navigation History
+- GotoLastEdit
+- Theme - Soda
+
 # Screenshot:
+## Ubuntu
 ![My_Sublime2](https://github.com/woainvzu/Sublime2_Config_Marslo/blob/master/Screenshot/Sublime2_Marslo.png?raw=true)
+## Windows:
+![Sublime3BetaWin7]()
+
