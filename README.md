@@ -6,10 +6,15 @@ The configuration about Sublime
 # Ubuntu
 ## Installation 
 - Download: http://www.sublimetext.com/
-- Install:
+- Sublime2 Installation:
 <pre><code># add-apt-repository ppa:webupd8team/sublime-text-2
 $ sudo apt-get update;
 $ sudo apt-get sublime-text-dev
+</code></pre>
+- Package Contrl Installation:
+    - Press `Ctrl + ``
+    - Input the following and press `Enter`:
+<pre><code>import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
 </code></pre>
 
 ## Crack (Sublime2):
@@ -46,14 +51,7 @@ EA7E-26838
 ## Configuration:
 - Copy the `Packages/*` to `$HOME/.config/sublime-text-2/Packages`
 
-## Pakcages:
-- Installation:
-    - Press `Ctrl + ``
-    - Input the following and press `Enter`:
-<pre><code>import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
-</code></pre>
-
-- Lists (Press `Ctrl + Shift + p` to open **Anything Panel**):
+## Installed Packages (Press `Ctrl + Shift + p` to open **Anything Panel**):
     - ConvertToUTF8
     - GBK Encoding Support
     - GotoLastEdit
@@ -68,7 +66,8 @@ EA7E-26838
 - Download(Sublime3Beta): http://www.sublimetext.com/3
 - Package Control Installation (Reference: http://wbond.net/sublime_packages/package_control/installation#ST3):
     - Download git
-    - Clone https://github.com/wbond/sublime_package_control.git as "Package Control" in foler `%appdata%\Sublime Text 3\Packages`
+    - Clone https://github.com/wbond/sublime_package_control.git as "Package Control" in foler **%appdata%\Sublime Text 3\Packages**    
+    For Example: 
     <pre><code>$ cd /c/user/<LOGINNAME>/AppData/Roaming/Sublime\ Text\ 3/Packages
     $ git clone https://github.com/wbond/sublime_package_control.git "Package Control"
     $ cd "Package Control"
@@ -79,7 +78,7 @@ EA7E-26838
 - Copy all files in foler **Win7(Sublime3Beta)** to local path `%appdata%\Sublime Text 3\Packages`
 - Restart Sublime 3
 
-## Plugins installed:
+## Installed Packages:
 - Package Control
 - ConvertToUTF8
 - OpenSearchResult
@@ -93,5 +92,5 @@ EA7E-26838
 ## Ubuntu
 ![My_Sublime2](https://github.com/woainvzu/Sublime2_Config_Marslo/blob/master/Screenshot/Sublime2_Marslo.png?raw=true)
 ## Windows:
-![Sublime3BetaWin7]()
+![Sublime3BetaWin7](https://github.com/woainvzu/Sublime2_Config_Marslo/blob/master/Screenshot/Sublime3win7.png?raw=true)
 
