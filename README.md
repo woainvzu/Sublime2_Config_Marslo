@@ -68,7 +68,7 @@ EA7E-26838
     - Download git
     - Clone https://github.com/wbond/sublime_package_control.git as "Package Control" in foler **%appdata%\Sublime Text 3\Packages**    
     For Example: 
-    <pre><code>$ cd /c/user/<LOGINNAME>/AppData/Roaming/Sublime\ Text\ 3/Packages
+    <pre><code>$ cd /c/user/\<LOGINNAME\>/AppData/Roaming/Sublime\ Text\ 3/Packages
     $ git clone https://github.com/wbond/sublime_package_control.git "Package Control"
     $ cd "Package Control"
     $ git checkout python3
