@@ -51,15 +51,16 @@ EA7E-26838
 ## Configuration:
 - Copy the `Packages/*` to `$HOME/.config/sublime-text-2/Packages`
 
-## Installed Packages (Press `Ctrl + Shift + p` to open **Anything Panel**):
-    - ConvertToUTF8
-    - GBK Encoding Support
-    - GotoLastEdit
-    - OpenSearchResult
-    - SublimeCodeIntel
-    - Vintage
-    - Vintage Ex
-    - natigationHistory
+## Installed Packages    
+Press `Ctrl + Shift + p` to open **Anything Panel**
+- ConvertToUTF8
+- GBK Encoding Support
+- GotoLastEdit
+- OpenSearchResult
+- SublimeCodeIntel
+- Vintage
+- VintageEx
+- natigationHistory
 
 # Windows (Win7)
 ## Installation
@@ -67,8 +68,7 @@ EA7E-26838
 - Package Control Installation (Reference: http://wbond.net/sublime_packages/package_control/installation#ST3):
     - Download git
     - Clone https://github.com/wbond/sublime_package_control.git as "Package Control" in foler **%appdata%\Sublime Text 3\Packages**    
-    For Example: 
-    <pre><code>$ cd /c/user/\<LOGINNAME\>/AppData/Roaming/Sublime\ Text\ 3/Packages
+    For Example: <pre><code>$ cd /c/user/\<LOGINNAME\>/AppData/Roaming/Sublime\ Text\ 3/Packages
     $ git clone https://github.com/wbond/sublime_package_control.git "Package Control"
     $ cd "Package Control"
     $ git checkout python3
