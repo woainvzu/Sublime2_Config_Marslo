@@ -12,10 +12,22 @@ $ sudo apt-get update;
 $ sudo apt-get sublime-text-dev
 </code></pre>
 - Package Contrl Installation:
-    - Press `Ctrl + ``
-    - Input the following and press `Enter`:
-<pre><code>import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
-</code></pre>
+    - For Sublime2:
+        - Press `Ctrl + ``
+        - Input the following and press `Enter`:
+        <pre><code>import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
+        </code></pre>
+    - For Sublime3:
+        - Press `Ctrl + ``
+        - Input the following code and press `Enter`:
+        <pre><code>import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+        </code></pre>
+        - Older method:
+        <pre><code>$ cd Packages/
+        $ git clone https://github.com/wbond/sublime_package_control.git "Package Control"
+        $ cd "Package Control"
+        $ git checkout python3
+        </code></pre>
 
 ## Crack (Sublime2):
 - Open the execution file by binary:
