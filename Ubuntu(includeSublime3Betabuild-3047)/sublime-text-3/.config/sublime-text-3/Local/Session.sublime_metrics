@@ -7,6 +7,10 @@
 		"Theme - Soda",
 		"Vintageous"
 	],
-	"startup_sec": 0.605238,
+	"startup_sec": 0.592062,
+	"syntax":
+	{
+		"JSON": 16
+	},
 	"time": 1378230231
 }
