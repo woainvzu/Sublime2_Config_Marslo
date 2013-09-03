@@ -67,12 +67,12 @@ EA7E-26838
 Press `Ctrl + Shift + p` to open **Anything Panel**
 - ConvertToUTF8
 - GBK Encoding Support
-- GotoLastEdit
-- OpenSearchResult
 - SublimeCodeIntel
 - Vintage
 - VintageEx
-- natigationHistory
+- [Navigation History](https://github.com/timjrobinson/SublimeNavigationHistory)
+- [GotoLastEdit](https://github.com/khrizt/GotoLastEdit)
+- [OpenSearchResult](https://github.com/abrookins/OpenSearchResult)
 
 # Windows (Win7)
 ## Installation
@@ -125,7 +125,7 @@ Press `Ctrl + Shift + p` to open **Anything Panel**
 
 # Screenshot:
 ## Ubuntu
-![My_Sublime2](https://github.com/woainvzu/Sublime2_Config_Marslo/blob/master/Screenshot/Sublime2_Marslo.png?raw=true)
+![Ubuntu_Sublime3](https://github.com/woainvzu/Sublime2and3_Config_Marslo/blob/master/Screenshot/sublime3screenshot.png?raw=true)
 ## Windows:
 ![Sublime3BetaWin7](https://github.com/woainvzu/Sublime2_Config_Marslo/blob/master/Screenshot/Sublime3win7.png?raw=true)
 
