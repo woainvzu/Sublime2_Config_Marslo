@@ -282,15 +282,23 @@
 				"selected_items":
 				[
 					[
+						"pcin",
+						"Package Control: Install Package"
+					],
+					[
+						"pcre",
+						"Package Control: Remove Package"
+					],
+					[
+						"pc up",
+						"Package Control: Upgrade Package"
+					],
+					[
 						"cmd",
 						"Set Syntax: Vintageous Command Line"
 					],
 					[
 						"pc in",
-						"Package Control: Install Package"
-					],
-					[
-						"pcin",
 						"Package Control: Install Package"
 					],
 					[
@@ -311,10 +319,6 @@
 					],
 					[
 						"pc u",
-						"Package Control: Upgrade Package"
-					],
-					[
-						"pc up",
 						"Package Control: Upgrade Package"
 					],
 					[
@@ -499,8 +503,8 @@
 								"selection":
 								[
 									[
-										1040,
-										1040
+										473,
+										473
 									]
 								],
 								"settings":
@@ -531,7 +535,7 @@
 										"user_action_input": null,
 										"user_input": null,
 										"user_motion_input": null,
-										"xpos": 52
+										"xpos": 60
 									}
 								},
 								"translation.x": 0.0,

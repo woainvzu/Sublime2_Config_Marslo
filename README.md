@@ -78,13 +78,20 @@ Press `Ctrl + Shift + p` to open **Anything Panel**
 ## Installation
 - Download(Sublime3Beta): http://www.sublimetext.com/3
 - Package Control Installation (Reference: http://wbond.net/sublime_packages/package_control/installation#ST3):
-    - Download git
-    - Clone https://github.com/wbond/sublime_package_control.git as "Package Control" in foler **%appdata%\Sublime Text 3\Packages**    
-    For Example: <pre><code>$ cd /c/user/\<LOGINNAME\>/AppData/Roaming/Sublime\ Text\ 3/Packages
-    $ git clone https://github.com/wbond/sublime_package_control.git "Package Control"
-    $ cd "Package Control"
-    $ git checkout python3
-    </code></pre>
+    - Installation by manually:
+        - Download git
+        - Clone https://github.com/wbond/sublime_package_control.git as "Package Control" in foler **%appdata%\Sublime Text 3\Packages**    
+        For Example: <pre><code>$ cd /c/user/\<LOGINNAME\>/AppData/Roaming/Sublime\ Text\ 3/Packages
+        $ git clone https://github.com/wbond/sublime_package_control.git "Package Control"
+        $ cd "Package Control"
+        $ git checkout python3
+        </code></pre>
+    - Installation by automation:
+        - `ctrl + \``
+        - Input:
+        <pre><code>import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) 
+        </code></pre>
+
 
 ## Use specified configurations and themes:
 - Copy all files in foler **Win7(Sublime3Beta)** to local path `%appdata%\Sublime Text 3\Packages`
@@ -93,12 +100,28 @@ Press `Ctrl + Shift + p` to open **Anything Panel**
 ## Installed Packages:
 - Package Control
 - ConvertToUTF8
-- OpenSearchResult
 - VintageEX
-- Vintageous
-- Navigation History
-- GotoLastEdit
 - Theme - Soda
+- [Vintageous](https://github.com/guillermooo/Vintageous)
+- [Navigation History](https://github.com/timjrobinson/SublimeNavigationHistory)
+- [GotoLastEdit](https://github.com/khrizt/GotoLastEdit)
+- [OpenSearchResult](https://github.com/abrookins/OpenSearchResult)
+- [Ctags](https://github.com/SublimeText/CTags)
+
+## Shortcut Mapping
+- `,+x`: toggle comment
+- `alt + shift + j`: navigation history back
+- `alt + shift + l`: navigation history forward
+- `alt + k`: scroll line (up)
+- `alt + j`: scroll line (down)
+- `ctrl + ]`: navigation to definition
+- `ctrl + t`: navigation jump back
+- `alt + l`: go to next view
+- `alt + h`: go to previous view
+- `alt + b`: backward word (Emacs shortcut)
+- `alt + f`: forward word (Emacs shortcut)
+- `ctrl + e`: go to the end of line (Emacs shortcut)
+- `ctrl + a`: go to the beginning of line (Emacs shortcut)
 
 # Screenshot:
 ## Ubuntu
