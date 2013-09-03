@@ -87,7 +87,7 @@ Press `Ctrl + Shift + p` to open **Anything Panel**
         $ git checkout python3
         </code></pre>
     - Installation by automation:
-        - `ctrl + \``
+        - `ctrl + ``
         - Input:
         <pre><code>import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) 
         </code></pre>
