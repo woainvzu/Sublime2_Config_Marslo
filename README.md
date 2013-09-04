@@ -125,7 +125,7 @@ Press `Ctrl + Shift + p` to open **Anything Panel**
 
 # Screenshot:
 ## Ubuntu
-![Ubuntu_Sublime3](https://github.com/woainvzu/Sublime2and3_Config_Marslo/blob/master/Screenshot/sublime3screenshot.png?raw=true)
+![Ubuntu_Sublime3](https://github.com/woainvzu/Sublime2and3_Config_Marslo/blob/master/Screenshot/sublime3screenshot_Marslo.png?raw=true)
 ## Windows:
 ![Sublime3BetaWin7](https://github.com/woainvzu/Sublime2_Config_Marslo/blob/master/Screenshot/Sublime3win7.png?raw=true)
 
