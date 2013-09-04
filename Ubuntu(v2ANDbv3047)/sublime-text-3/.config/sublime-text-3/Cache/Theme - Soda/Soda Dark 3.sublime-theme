@@ -120,7 +120,6 @@
 //
 // TAB BUTTONS
 //
-    
     // Tab close button
     {
         "class": "tab_close_button",
@@ -199,7 +198,6 @@
 //
 // TAB LABELS
 //
-    
     {
         "class": "tab_label",
         "fade": true,
@@ -620,7 +618,7 @@
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         // "color": [190, 190, 190],
         "color": [120, 140, 80],
-        "font.face": "Consolas",
+        "font.face": "Monaco",
         "font.size": 13
     },
     {
@@ -628,7 +626,7 @@
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         // "color": [200, 100, 0],
         "color": [120, 150, 120],
-        "font.face": "Consolas",
+        "font.face": "Monaco",
         "font.size": 13
     },
     {
@@ -961,9 +959,13 @@
     {
         "class": "auto_complete_label",
         "fg": [140, 140, 140],
-        "match_fg": [220, 220, 220],
+        // Light Green
+        "match_fg": [166, 226, 46, 255],
+        // "match_fg": [220, 220, 220],
+        // Orange
+        "selected_match_fg": [253, 151, 31, 255],
+        // "selected_match_fg": [245, 245, 245]
         "selected_fg": [180, 180, 180],
-        "selected_match_fg": [245, 245, 245]
     },
     {
         "class": "table_row",
