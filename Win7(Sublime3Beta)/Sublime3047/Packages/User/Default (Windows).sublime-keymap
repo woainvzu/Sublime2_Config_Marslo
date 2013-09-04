@@ -9,9 +9,8 @@
     { "keys": ["alt+k"], "command": "scroll_lines", "args": {"amount": 1.0 } },
     { "keys": ["alt+j"], "command": "scroll_lines", "args": {"amount": -1.0 } },
 
-
     { "keys": ["ctrl+]"], "command": "navigate_to_definition"},
-    { "keys": ["ctrl+t"], "command": "jump_back"},
+    // { "keys": ["ctrl+t"], "command": "jump_back"},
 
     // move
     { "keys": ["alt+l"], "command": "next_view" },
@@ -24,5 +23,7 @@
     { "keys": ["ctrl+a"], "command": "set_motion", "args": {"motion": "vi_underscore"}, "context": [{"key": "vi_mode_normal_or_visual"}] },
     // { "keys": ["ctrl+a"], "command": "set_action", "args": {"action": "vi_big_i"}, "context": [{"key": "setting.command_mode"}] },
     // { "keys": ["ctrl+e"], "command": "set_action", "args": {"action": "vi_big_a"}, "context": [{"key": "vi_mode_normal_or_any_visual"}] },
+
+    { "keys": ["ctrl+alt+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
 
 ]

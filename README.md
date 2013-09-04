@@ -13,12 +13,12 @@ $ sudo apt-get sublime-text-dev
 </code></pre>
 - Package Contrl Installation:
     - For Sublime2:
-        - Press `Ctrl + ``
+        - Press <code>Ctrl + `</code>
         - Input the following and press `Enter`:
         <pre><code>import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')
         </code></pre>
     - For Sublime3:
-        - Press `Ctrl + ``
+        - Press <code>Ctrl + `</code>
         - Input the following code and press `Enter`:
         <pre><code>import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
         </code></pre>
@@ -122,6 +122,7 @@ Press `Ctrl + Shift + p` to open **Anything Panel**
 - `alt + f`: forward word (Emacs shortcut)
 - `ctrl + e`: go to the end of line (Emacs shortcut)
 - `ctrl + a`: go to the beginning of line (Emacs shortcut)
+- `ctrl + alt + o`: Open the current directory
 
 # Screenshot:
 ## Ubuntu
