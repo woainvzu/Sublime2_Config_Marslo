@@ -92,7 +92,6 @@ Press `Ctrl + Shift + p` to open **Anything Panel**
         <pre><code>import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) 
         </code></pre>
 
-
 ## Use specified configurations and themes:
 - Copy all files in foler **Win7(Sublime3Beta)** to local path `%appdata%\Sublime Text 3\Packages`
 - Restart Sublime 3
@@ -109,20 +108,21 @@ Press `Ctrl + Shift + p` to open **Anything Panel**
 - [Ctags](https://github.com/SublimeText/CTags)
 
 ## Shortcut Mapping
-- `,+x`: toggle comment
+- `,x`: toggle comment
+- `cmd`: Open Command and cd to the current file path
 - `alt + shift + j`: navigation history back
 - `alt + shift + l`: navigation history forward
 - `alt + k`: scroll line (up)
 - `alt + j`: scroll line (down)
-- `ctrl + ]`: navigation to definition
-- `ctrl + t`: navigation jump back
 - `alt + l`: go to next view
 - `alt + h`: go to previous view
 - `alt + b`: backward word (Emacs shortcut)
 - `alt + f`: forward word (Emacs shortcut)
+- `ctrl + ]`: navigation to definition
+- `ctrl + t`: navigation jump back
 - `ctrl + e`: go to the end of line (Emacs shortcut)
 - `ctrl + a`: go to the beginning of line (Emacs shortcut)
-- `ctrl + alt + o`: Open the current directory
+- `ctrl + alt + o`: Open the file browser and to current directory
 
 # Screenshot:
 ## Ubuntu
