@@ -557,9 +557,19 @@ class _vi_r(sublime_plugin.TextCommand):
             pt = view.text_point(next_row, 0)
             return sublime.Region(pt, pt)
 
+        def ff(view, s):
+            # no ending \n
+            if view.substr(s.end() - 1) == '\n':
+                s = sublime.Region(s.begin(), s.end() - 1)
+            view.replace(edit, s, character * s.size())
+            return sublime.Region(s.begin(), s.begin())
+
         if mode == _MODE_INTERNAL_NORMAL:
             for s in self.view.sel():
                 self.view.replace(edit, s, character * s.size())
+        elif mode in (MODE_VISUAL, MODE_VISUAL_LINE):
+            regions_transformer(self.view, ff)
+            return
 
         if character == '\n':
             regions_transformer(self.view, f)
@@ -635,6 +645,11 @@ class _vi_repeat(IrreversibleTextCommand):
             # Unreachable.
             return
 
+        # Signal that we're not simply issuing an interactive command, but rather repeating one.
+        # This is necessary, for example, to notify _vi_k that it should become _vi_j instead
+        # if the former was run in visual mode.
+        state.settings.vi['_is_repeating'] = True
+
         if not cmd:
             return
         elif cmd == 'vi_run':
@@ -659,6 +674,7 @@ class _vi_repeat(IrreversibleTextCommand):
         # XXX: Needed here? Maybe enter_... type commands should be IrreversibleTextCommands so we
         # must/can call them whenever we need them withouth affecting the undo stack.
         self.view.run_command('vi_enter_normal_mode')
+        state.settings.vi['_is_repeating'] = False
 
 
 class _vi_redo(IrreversibleTextCommand):

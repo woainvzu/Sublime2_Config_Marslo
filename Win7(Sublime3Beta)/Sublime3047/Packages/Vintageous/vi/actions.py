@@ -22,6 +22,7 @@ from Vintageous.vi.constants import MODE_VISUAL_BLOCK
 
 def vi_enter_visual_mode(vi_cmd_data):
     vi_cmd_data['motion_required'] = False
+    vi_cmd_data['keep_selection_as_is'] = True
     vi_cmd_data['action']['command'] = 'vi_enter_visual_mode'
     vi_cmd_data['action']['args'] = {}
     return vi_cmd_data
@@ -29,6 +30,7 @@ def vi_enter_visual_mode(vi_cmd_data):
 
 def vi_enter_select_mode(vi_cmd_data):
     vi_cmd_data['motion_required'] = False
+    vi_cmd_data['keep_selection_as_is'] = True
     vi_cmd_data['action']['command'] = 'vi_enter_select_mode'
     vi_cmd_data['action']['args'] = {}
     return vi_cmd_data
@@ -36,6 +38,7 @@ def vi_enter_select_mode(vi_cmd_data):
 
 def vi_enter_normal_mode(vi_cmd_data):
     vi_cmd_data['motion_required'] = False
+    vi_cmd_data['keep_selection_as_is'] = True
     vi_cmd_data['action']['command'] = 'vi_enter_normal_mode'
     vi_cmd_data['action']['args'] = {}
     return vi_cmd_data
@@ -44,6 +47,7 @@ def vi_enter_normal_mode(vi_cmd_data):
 def vi_enter_visual_line_mode(vi_cmd_data):
     vi_cmd_data['motion_required'] = False
     # TODO: This seems to be duplicated during this command's full run.
+    vi_cmd_data['keep_selection_as_is'] = True
     vi_cmd_data['action']['command'] = 'vi_enter_visual_line_mode'
     vi_cmd_data['action']['args'] = {}
     vi_cmd_data['post_action'] = ['visual_extend_to_full_line',]
@@ -52,6 +56,7 @@ def vi_enter_visual_line_mode(vi_cmd_data):
 
 def vi_enter_visual_block_mode(vi_cmd_data):
     vi_cmd_data['motion_required'] = False
+    vi_cmd_data['keep_selection_as_is'] = True
     vi_cmd_data['action']['command'] = 'vi_enter_visual_block_mode'
     vi_cmd_data['action']['args'] = {}
     return vi_cmd_data
@@ -607,8 +612,9 @@ def vi_r(vi_cmd_data):
     # TODO: If count > len(line), r should abort. We'd need _p_post_every_motion hook and tell
     # ViRun to cancel if selections didn't change.
     vi_cmd_data['motion_required'] = False
-    vi_cmd_data['motion']['command'] = 'move'
-    vi_cmd_data['motion']['args'] = {'by': 'characters', 'extend': True, 'forward': True}
+    if vi_cmd_data['mode'] == _MODE_INTERNAL_NORMAL:
+        vi_cmd_data['motion']['command'] = 'move'
+        vi_cmd_data['motion']['args'] = {'by': 'characters', 'extend': True, 'forward': True}
     vi_cmd_data['action']['command'] = '_vi_r'
     vi_cmd_data['action']['args'] = {'character': vi_cmd_data['user_action_input'], 'mode': vi_cmd_data['mode']}
     vi_cmd_data['follow_up_mode'] = 'vi_enter_normal_mode'

@@ -88,6 +88,7 @@ class ViRunCommand(sublime_plugin.TextCommand):
                                 state.cancel_macro = True
                                 return
 
+                self.reorient_begin_to_end(vi_cmd_data)
                 self.do_action(vi_cmd_data)
             else:
                 self.do_whole_motion(vi_cmd_data)
@@ -125,6 +126,15 @@ class ViRunCommand(sublime_plugin.TextCommand):
             state = VintageState(self.view)
             state.next_mode = vi_cmd_data['next_mode']
             state.next_mode_command = vi_cmd_data['follow_up_mode']
+
+    def reorient_begin_to_end(self, vi_cmd_data):
+        if vi_cmd_data['keep_selection_as_is']:
+            return
+        new_sel = []
+        for s in self.view.sel():
+            new_sel.append(sublime.Region(s.begin(), s.end()))
+        self.view.sel().clear()
+        self.view.sel().add_all(new_sel)
 
     # TODO: Test me.
     def save_caret_pos(self):
