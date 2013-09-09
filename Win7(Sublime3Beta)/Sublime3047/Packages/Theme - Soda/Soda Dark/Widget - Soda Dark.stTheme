@@ -25,6 +25,10 @@
 				<string>#333333</string>
 				<key>selection</key>
 				<string>#222222</string>
+				<key>selectionBorder</key>
+				<string>#66666600</string>
+				<key>inactiveSelection</key>
+				<string>#4a4a4a</string>
 			</dict>
 		</dict>
 		<dict>

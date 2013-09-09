@@ -120,7 +120,7 @@
 //
 // TAB BUTTONS
 //
-    
+
     // Tab close button
     {
         "class": "tab_close_button",
@@ -199,7 +199,7 @@
 //
 // TAB LABELS
 //
-    
+
     {
         "class": "tab_label",
         "fade": true,
@@ -207,9 +207,10 @@
         "fg": [100, 100, 100],
         "shadow_color": [25, 25, 25],
         // "shadow_offset": [0, -1],
-        "shadow_offset": [2, 2],
-        "font.face": "Monaco",
-        "font.size": 11
+        "shadow_offset": [2, 1],
+        "font.face": "Candara",
+        "font.size": 12
+        // "font.italic": false
     },
     {
         "class": "tab_label",
@@ -492,7 +493,7 @@
         "class": "label_control",
         "color": [130, 130, 130],
         "font.face": "Monaco",
-        "font.size": 13
+        "font.size": 11
     },
     // Text field labels
     {
@@ -591,7 +592,7 @@
     {
         "class": "sidebar_heading",
         "color": [100, 100, 100],
-        "font.size": 14,
+        "font.size": 13,
         "font.face": "Monaco",
         "font.bold": true,
         "shadow_color": [25, 25, 25],
@@ -612,7 +613,11 @@
         // "color": [38, 38, 198],
         "color": [110, 125, 110],
         "shadow_color": [0, 0, 0],
-        "shadow_offset": [2, 2]
+        "shadow_offset": [2, 2],
+        "font.size": 12,
+        "font.face": "Consolas"
+        // "font.bold": false,
+        // "font.italic": false
     },
     // Sidebar folder entry
     {
@@ -620,16 +625,18 @@
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         // "color": [190, 190, 190],
         "color": [120, 140, 80],
-        "font.face": "Monaco",
-        "font.size": 12
+        "font.face": "Consolas",
+        "font.size": 13,
+        "shadow_offset": [1, 1]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         // "color": [200, 100, 0],
         "color": [120, 150, 120],
-        "font.face": "Monaco",
-        "font.size": 12
+        "font.face": "Consolas",
+        "font.size": 13,
+        "shadow_offset": [1, 1]
     },
     {
         "class": "sidebar_label",
