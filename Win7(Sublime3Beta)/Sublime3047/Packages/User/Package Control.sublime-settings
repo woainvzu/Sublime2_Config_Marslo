@@ -4,6 +4,7 @@
 	[
 		"ConvertToUTF8",
 		"CTags",
+		"GBK Encoding Support",
 		"GotoLastEdit",
 		"Navigation History",
 		"Package Control",

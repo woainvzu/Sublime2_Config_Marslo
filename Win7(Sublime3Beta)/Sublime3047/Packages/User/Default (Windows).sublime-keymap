@@ -1,7 +1,5 @@
 [
     { "keys": [",", "x"], "command": "toggle_comment", "args": { "block": false } },
-    // { "keys": ["ctrl+q"], "command": "toggle_comment", "args": { "block": false } },
-    // { "keys": ["ctrl+shift+q"], "command": "toggle_comment", "args": { "block": true } },
 
     { "keys": ["alt+shift+j"], "command": "navigation_history_back"},
     { "keys": ["alt+shift+l"], "command": "navigation_history_forward"},
