@@ -65,11 +65,11 @@ EA7E-26838
 
 ## Installed Packages    
 Press `Ctrl + Shift + p` to open **Anything Panel**
-- ConvertToUTF8
-- GBK Encoding Support
 - SublimeCodeIntel
 - Vintage
 - VintageEx
+- [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
+- [GBK Encoding Support](https://github.com/akira-cn/sublime-gbk)
 - [Navigation History](https://github.com/timjrobinson/SublimeNavigationHistory)
 - [GotoLastEdit](https://github.com/khrizt/GotoLastEdit)
 - [OpenSearchResult](https://github.com/abrookins/OpenSearchResult)
@@ -97,10 +97,11 @@ Press `Ctrl + Shift + p` to open **Anything Panel**
 - Restart Sublime 3
 
 ## Installed Packages:
-- Package Control
-- ConvertToUTF8
+- [Package Control](https://github.com/wbond/sublime_package_control)
 - VintageEX
 - Theme - Soda
+- [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
+- [GBK Encoding Support](https://github.com/akira-cn/sublime-gbk)
 - [Vintageous](https://github.com/guillermooo/Vintageous)
 - [Navigation History](https://github.com/timjrobinson/SublimeNavigationHistory)
 - [GotoLastEdit](https://github.com/khrizt/GotoLastEdit)
