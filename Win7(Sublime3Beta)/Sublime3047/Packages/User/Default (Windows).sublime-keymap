@@ -23,7 +23,7 @@
     // { "keys": ["ctrl+e"], "command": "set_action", "args": {"action": "vi_big_a"}, "context": [{"key": "vi_mode_normal_or_any_visual"}] },
     { "keys": ["ctrl+w"], "command": "delete_word", "args": { "forward": false, "sub_words": true }, "context": [{"key": "setting.command_mode", "operand": false}] },
 
-    { "keys": ["ctrl+alt+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+    { "keys": ["alt+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
     { "keys": ["c", "m", "d"], "command": "cmd"}
 
 ]
