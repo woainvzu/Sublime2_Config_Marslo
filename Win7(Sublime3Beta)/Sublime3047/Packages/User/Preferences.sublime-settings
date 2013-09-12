@@ -27,11 +27,24 @@
 	"word_wrap": false,
 	"auto_match_enabled": true,
 	"bold_folder_labels": true,
+	"line_padding_bottom": 3,
+	"Line_padding_top": 3,
+
+	// Tabs
+	"highlight_modified_tabs": true,
+	"show_full_path": true,
 
 	// code style
 	"caret_style": "phase",
 	"default_encoding": "GBK",
 	"dictionary": "Packages/Language - English/en_US.dic",
+
+	// Match
+	"match_brackets": true,
+	"match_brackets_angle": true,
+	"match_brackets_braces": true,
+	"match_brackets_content": true,
+	"match_brackets_square": true,
 
 	// Theme
 	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
@@ -49,7 +62,8 @@
 	[
 		".tags",
 		".tags_sorted_by_file",
-		".gemtags"
+		".gemtags",
+		".git"
 	],
 
 	"ignored_packages":
